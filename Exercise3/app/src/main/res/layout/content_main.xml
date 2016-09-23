@@ -14,6 +14,18 @@
     tools:showIn="@layout/activity_main">
 
     <Button
+        android:id="@+id/checkLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check_location"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/location"/>
+
+    <Button
         android:id="@+id/take_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
