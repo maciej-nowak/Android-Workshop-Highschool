@@ -6,8 +6,11 @@
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="log_in">Log In</string>
+    <string name="log_out">Log Out</string>
 
     <string name="invalid_password">Password does not match to username</string>
+    <string name="log_out_success">You are log out</string>
+
 
 
 </resources>
