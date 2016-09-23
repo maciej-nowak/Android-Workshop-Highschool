@@ -1,3 +1,5 @@
+package pl.maciej_nowak.exercise4;
+
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;

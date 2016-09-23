@@ -8,8 +8,25 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    ListView list;
+    String[] itemname ={
+            "Firefox",
+            "Chrome",
+            "IE"
+    };
+
+    Integer[] imgid={
+            R.drawable.p1,
+            R.drawable.p2,
+            R.drawable.p3,
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +41,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+        MyListAdapter adapter = new MyListAdapter(this, itemname, imgid);
+        list=(ListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                // TODO Auto-generated method stub
+                String Slecteditem= itemname[+position];
+                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
+
             }
         });
     }
