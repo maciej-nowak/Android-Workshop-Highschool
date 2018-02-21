@@ -10,4 +10,4 @@ In the [first lesson](exercises/Exercise1), create a screen showing the recipe o
 ### Screenshots
 Screenshots shows screens of the finished lessons.
 
-<img src="screenshots/lesson1.png" width="180"> <img src="screenshots/lesson2a.png" width="180"> <img src="screenshots/lesson2b.png" width="180"> <img src="screenshots/lesson3.png" width="180"> <img src="screenshots/lesson4.png" width="180">
+<img src="screenshots/lesson1.png" width="170"> <img src="screenshots/lesson2a.png" width="170"> <img src="screenshots/lesson2b.png" width="170"> <img src="screenshots/lesson3.png" width="170"> <img src="screenshots/lesson4.png" width="170">
